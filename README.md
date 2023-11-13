@@ -1,16 +1,13 @@
-#GitHub Repository Description:
-A Streamlit web app for performing SEO ranking checks in bulk using Selenium. This tool allows users to input a URL and a list of keywords, either manually or by uploading a CSV file, and retrieve the SEO rankings for those keywords on Google. The app utilizes Selenium for browser automation and headless Chrome for a seamless user experience.
+# SEO Bulk Rank Checker
 
-# SERP SEO Ranking Checker in Bulk
-
-![GitHub]([https://img.shields.io/github/license/your-username/your-repository](https://github.com/pratham4544/))
-![GitHub last commit](https://img.shields.io/github/last-commit/your-username/your-repository)
-![GitHub issues](https://img.shields.io/github/issues-raw/your-username/your-repository)
-![GitHub pull requests](https://img.shields.io/github/issues-pr/your-username/your-repository)
+![GitHub](https://img.shields.io/github/license/pratham4544/SEO-Bulk-Rank-Checker)
+![GitHub last commit](https://img.shields.io/github/last-commit/pratham4544/SEO-Bulk-Rank-Checker)
+![GitHub issues](https://img.shields.io/github/issues-raw/pratham4544/SEO-Bulk-Rank-Checker)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/pratham4544/SEO-Bulk-Rank-Checker)
 
 ## Overview
 
-This Streamlit web app enables users to perform bulk SEO ranking checks using Selenium. It supports both manual entry and CSV file upload for keywords, providing an easy way to retrieve and analyze SEO rankings on Google.
+SEO Bulk Rank Checker is a Streamlit web app that facilitates bulk SEO ranking checks using Selenium. It allows users to input a URL and a list of keywords, either manually or by uploading a CSV file, to retrieve the SEO rankings for those keywords on Google.
 
 ## Features
 
@@ -24,5 +21,5 @@ This Streamlit web app enables users to perform bulk SEO ranking checks using Se
 1. **Clone the Repository:**
 
    ```bash
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/pratham4544/SEO-Bulk-Rank-Checker.git
+   cd SEO-Bulk-Rank-Checker
