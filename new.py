@@ -5,6 +5,9 @@ from selenium.webdriver.support.ui import Select
 import time
 import re
 import pandas as pd
+from webdriver_manager.chrome import ChromeDriverManager
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
 
 def start_browser(url, keyword):
     st.success("Journey Start Just Realx Now...")
@@ -90,6 +93,9 @@ def create_csv(keyword, ranks):
     csv_data = df.to_csv(index=False).encode('utf-8')
     st.download_button("Download CSV", data=csv_data, file_name="ranking.csv", key='download_csv')
 
+def get_driver():
+        return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
 
 st.title("SERP SEO Ranking Checker in Bulk")
 url = st.text_input("Enter Full URL:")
@@ -97,9 +103,12 @@ word = st.text_input('Enter the keyword:')
 uploaded_file = st.file_uploader("Upload a CSV file", type=["csv"])
 
 if uploaded_file is not None:
-    chrome_options = webdriver.ChromeOptions()
-    chrome_options.add_argument("--headless")
-    driver = webdriver.Chrome(options=chrome_options)
+    
+    options = Options()
+    options.add_argument('--disable-gpu')
+    options.add_argument('--headless')
+
+    driver = get_driver()
     driver.get('https://proseotoolkit.com/tools/google-serp')
     keywords = []
     ranks = []
